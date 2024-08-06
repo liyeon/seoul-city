@@ -23,7 +23,7 @@
 
 <body>
   <div id="skipNav">
-    <a href="#main">본문내용바로가기</a>
+    <a href="#main">본문 내용 바로가기</a>
   </div>
   <!-- wrap -->
   <div id="wrap">
@@ -81,9 +81,9 @@
               <fieldset>
                 <!-- 폼영역 -->
                 <legend class="blind">검색</legend>
-                <input type="text" class="input-text" />
+                <input type="text" class="input-text" placeholder="검색어를 입력해주세요." />
                 <button type="button" class="btn-keyboard" aria-pressed="false">
-                  <span class="blind">가상키보드</span>
+                  <img src="./assets/images/icon/keyboard.png" alt="">
                 </button>
                 <button type="submit" class="btn-submit">
                   <span class="blind">검색하기</span>
@@ -92,8 +92,24 @@
             </form>
           </div>
           <div class="weather-area">
-            <div class="icon-wrap"></div>
-            <div class="info-wrap"></div>
+            <div class="icon-wrap">
+              <img src="./assets/images/weather.png" alt="구름 조금">
+            </div>
+            <div class="info-wrap">
+              <a href="https://www.weather.go.kr/w/index.do" target="_blank">
+                <p>
+                  <em class="temp">30.8℃</em>
+                  <span class="status">구름조금</span>
+                </p>
+                <span class="dust">
+                  미세먼지
+                  <em class="tag good">(좋음)</em>
+                  &nbsp;
+                  초미세먼지
+                  <em class="tag average">(보통)</em>
+                </span>
+              </a>
+            </div>
           </div>
           <div class="brand-area">
             <a href="https://www.seoul.go.kr/newbrand/" target="_blank" aria-label="서울 신규 브랜드 소개 페이지로 이동(새창)">
@@ -101,8 +117,8 @@
             </a>
           </div>
           <div class="language-area">
-            <label for="laguage" class="blind">언어 선택</label>
-            <select id="laguage" name="laguage">
+            <label for="language" class="blind">언어 선택</label>
+            <select id="language" name="language">
               <option value="http://english.seoul.go.kr/?SSid=101_01">ENGLISH</option>
               <option value="http://japanese.seoul.go.kr/?SSid=101_02">日本語</option>
               <option value="http://chinese.seoul.go.kr/?SSid=101_04">简体中文</option>
@@ -121,7 +137,7 @@
       </aside>
     </header>
 
-    <main class="container">
+    <main id="main" class="container">
       <div class="inner content">
         <section class="sc-visual">
           <h2 class="blind">주요 소식 및 시민 참여 영역</h2>
@@ -140,6 +156,26 @@
           </div>
           <div class="group-mayor">
             <h2 class="blind">서울시장에게 바란다(온라인 시장실)</h2>
+            <a href="https://mayor.seoul.go.kr/index.do" class="link-mayor" target="_blank">
+              <img src="./assets/images/mayor/img-mayor-intro.png" alt="서울 특별시장 오세훈입니다.">
+            </a>
+            <a href="#" class="link-want">
+              <img src="./assets/images/mayor/btn-mayorlink0.png" alt="시장에게 바란다.">
+            </a>
+            <div class="link-wrap">
+              <a href="#">
+                <img src="./assets/images/mayor/btn-mayorlink1.png" alt="공약(메니페스토)">
+              </a>
+              <a href="#">
+                <img src="./assets/images/mayor/btn-mayorlink2.png" alt="정책제안">
+              </a>
+              <a href="#">
+                <img src="./assets/images/mayor/btn-mayorlink3.png" alt="투표">
+              </a>
+              <a href="#">
+                <img src="./assets/images/mayor/btn-mayorlink4.png" alt="설문조사">
+              </a>
+            </div>
           </div>
           <a href="http://pf.kakao.com/_WlXsV" target="_blank" class="link-kakao">
             <img src="./assets/images/kakao-text.png" alt="서울시 카카오톡 채널 추가 - 서울의 유용한 소식을 빠르게 받으세요!">
@@ -230,33 +266,35 @@
       </div>
       <aside class="ad-banner">
         <h2 class="blind">이미지 배너</h2>
-        <ul class="banner-list">
-          <li class="banner-item">
-            <a href="#">
-              <img src="./assets/images/banner/01.jpg" alt="스토리인서울">
-            </a>
-          </li>
-          <li class="banner-item">
-            <a href="#">
-              <img src="./assets/images/banner/02.jpg" alt="페스티벌인서울">
-            </a>
-          </li>
-          <li class="banner-item">
-            <a href="#">
-              <img src="./assets/images/banner/03.jpg" alt="서울 시민 안전을 위한 수산물 방사능 검사결과">
-            </a>
-          </li>
-          <li class="banner-item">
-            <a href="#">
-              <img src="./assets/images/banner/04.jpg" alt="대한민국 정부 대표포털 정부24(민원)">
-            </a>
-          </li>
-          <li class="banner-item">
-            <a href="#">
-              <img src="./assets/images/banner/05.jpg" alt="민원발급서비스 서울시온라인민원">
-            </a>
-          </li>
-        </ul>
+        <div class="inner">
+          <ul class="banner-list">
+            <li class="banner-item">
+              <a href="#">
+                <img src="./assets/images/banner/01.jpg" alt="스토리인서울">
+              </a>
+            </li>
+            <li class="banner-item">
+              <a href="#">
+                <img src="./assets/images/banner/02.jpg" alt="페스티벌인서울">
+              </a>
+            </li>
+            <li class="banner-item">
+              <a href="#">
+                <img src="./assets/images/banner/03.jpg" alt="서울 시민 안전을 위한 수산물 방사능 검사결과">
+              </a>
+            </li>
+            <li class="banner-item">
+              <a href="#">
+                <img src="./assets/images/banner/04.jpg" alt="대한민국 정부 대표포털 정부24(민원)">
+              </a>
+            </li>
+            <li class="banner-item">
+              <a href="#">
+                <img src="./assets/images/banner/05.jpg" alt="민원발급서비스 서울시온라인민원">
+              </a>
+            </li>
+          </ul>
+        </div>
       </aside>
       <div class="inner">
         <article class="at-board">
@@ -531,7 +569,62 @@
             </ul>
           </section>
         </article>
-
+        <section class="sc-banner">
+          <h2 class="blind">서울시 배너 슬라이드</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="https://mediahub.seoul.go.kr/archives/2011833" target="_blank">
+                  <img src="./assets/images/slide/banner/1.png" alt="방콕대신서울콕">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.osmb.go.kr/" target="_blank">
+                  <img src="./assets/images/slide/banner/2.jpg" alt="중소기업,소상공인 애로 해결사 - 중소기업옴부즈만">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="http://www.drugfree.or.kr/" target="_blank">
+                  <img src="./assets/images/slide/banner/3.jpg" alt="마약 문제로 힘들 땐 언제 어디서나 누구나 1342, 한국마약퇴치운동본부">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.kosha.or.kr/survey/" target="_blank">
+                  <img src="./assets/images/slide/banner/4.jpg" alt="2024 산업안전 대진단- 중대재해 예방,대진단으로 시작하세요!">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://news.seoul.go.kr/culture/archives/522224" target="_blank">
+                  <img src="./assets/images/slide/banner/5.jpg" alt="보기 쉽고 찾기 쉬운 서울 지하철 노선도">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.mois.go.kr/frt/sub/popup/p_taegugki_banner/screen.do" target="_blank">
+                  <img src="./assets/images/slide/banner/6.jpg" alt="대한민국 국가상징-국민 통합과 자긍심의 상징">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.seoulwomanup.or.kr/womanup/main/main.do" target="_blank">
+                  <img src="./assets/images/slide/banner/7.jpg" alt="일자리 부르릉- 찾아가는 여성 취업 상담버스">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://goodprice.go.kr/" target="_blank">
+                  <img src="./assets/images/slide/banner/8.jpg" alt="행정안전부 - 착한가격업소를찾습니다. 2024.06.10~11.30">
+                </a>
+              </div>
+            </div>
+            <div class="group-control">
+              <div class="swiper-pagination"></div>
+              <div class="btn-wrap">
+                <button type="button" class="btn prev" aria-label="이전 슬라이드"></button>
+                <button type="button" class="btn start" aria-label="슬라이드 시작"></button>
+                <button type="button" class="btn stop" aria-label="슬라이드 정지"></button>
+                <button type="button" class="btn next" aria-label="다음 슬라이드"></button>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="sc-related">
           <h2 class="blind">서울시 관련 사이트</h2>
           <ul class="related-list">
@@ -591,7 +684,7 @@
                 </script>
               </ul>
             </li>
-            <li class="related-item">
+            <li class="related-item none">
               <a href="#">중앙행정기관</a>
             </li>
             <li class="related-item">
@@ -614,62 +707,6 @@
               </ul>
             </li>
           </ul>
-        </section>
-        <section class="sc-banner">
-          <h2 class="blind">서울시 배너 슬라이드</h2>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="https://mediahub.seoul.go.kr/archives/2011833" target="_blank">
-                  <img src="./assets/images/slide/banner/1.png" alt="방콕대신서울콕">
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://www.osmb.go.kr/" target="_blank">
-                  <img src="./assets/images/slide/banner/2.jpg" alt="중소기업,소상공인 애로 해결사 - 중소기업옴부즈만">
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="http://www.drugfree.or.kr/" target="_blank">
-                  <img src="./assets/images/slide/banner/3.jpg" alt="마약 문제로 힘들 땐 언제 어디서나 누구나 1342, 한국마약퇴치운동본부">
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://www.kosha.or.kr/survey/" target="_blank">
-                  <img src="./assets/images/slide/banner/4.jpg" alt="2024 산업안전 대진단- 중대재해 예방,대진단으로 시작하세요!">
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://news.seoul.go.kr/culture/archives/522224" target="_blank">
-                  <img src="./assets/images/slide/banner/5.jpg" alt="보기 쉽고 찾기 쉬운 서울 지하철 노선도">
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://www.mois.go.kr/frt/sub/popup/p_taegugki_banner/screen.do" target="_blank">
-                  <img src="./assets/images/slide/banner/6.jpg" alt="대한민국 국가상징-국민 통합과 자긍심의 상징">
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://www.seoulwomanup.or.kr/womanup/main/main.do" target="_blank">
-                  <img src="./assets/images/slide/banner/7.jpg" alt="일자리 부르릉- 찾아가는 여성 취업 상담버스">
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://goodprice.go.kr/" target="_blank">
-                  <img src="./assets/images/slide/banner/8.jpg" alt="행정안전부 - 착한가격업소를찾습니다. 2024.06.10~11.30">
-                </a>
-              </div>
-            </div>
-            <div class="group-control">
-              <div class="swiper-pagination"></div>
-              <div class="btn-wrap">
-                <button type="button" class="btn prev" aria-label="이전 슬라이드"></button>
-                <button type="button" class="btn start" aria-label="슬라이드 시작"></button>
-                <button type="button" class="btn stop" aria-label="슬라이드 정지"></button>
-                <button type="button" class="btn next" aria-label="다음 슬라이드"></button>
-              </div>
-            </div>
-          </div>
         </section>
       </div>
     </main>

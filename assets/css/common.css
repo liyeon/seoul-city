@@ -1,3 +1,20 @@
+
+#skipNav a{
+  position: absolute;
+  width: 100%;
+	top: -100px;
+	white-space: nowrap;
+	padding: 10px;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+  font-size: 1.15em;
+  text-align: center;
+}
+#skipNav a:focus,
+#skipNav a:active{
+	top: 0;
+}
+
 .blind{
   position: absolute;
   width: 1px;
@@ -26,6 +43,8 @@
 	background: url(../images/btn_top.png) no-repeat center/cover;
 }
 
+#header .search-form .btn-submit,
+#header .group-header .logo,
 .sc-banner .btn{
   background-image: url(../images/icon/icon_sp.png);
   background-repeat: no-repeat;

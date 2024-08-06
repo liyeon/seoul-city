@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
 
 @import './reset.css';
 @import './common.css';
@@ -11,4 +12,182 @@
 	width: 1152px;
 	margin: 0 auto;
 	min-width: 1152px;
+}
+
+
+/* 스토리 인 서울 */
+#header{
+	display: flex;
+	flex-direction: column;
+}
+#header li:hover{
+	color: #2292e9;
+}
+#header .inner{
+	order: 2;
+}
+#header .ad-story{
+	order:1;
+	height: 91px;
+	border-bottom: 1px solid #dbdbdb;
+	overflow: hidden;
+}
+#header .ad-story img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+#header .group-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	gap: 65px;
+}
+#header .group-header .logo a{
+	display: block;
+	width: 105px;
+	height: 27px;
+	background-position: -5px -165px;
+}
+
+#header .gnb-area{
+	flex: 1;
+}
+#header .gnb-list{
+	display: flex;
+	flex: 1;
+	gap: 20px;
+}
+#header .gnb-item a{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 48px;
+}
+
+#header .util-area{
+	margin-right: 10px;
+}
+#header .util-list{
+	display: flex;
+	gap: 20px;
+}
+#header .util-item{
+	font-weight: 700;
+}
+
+/* 검색 */
+#header .group-bottom{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 120px;
+	position: relative;
+}
+#header .group-bottom .link-main{	
+	width: 133px;
+	height: 51px;
+	margin-right: 110px;
+}
+
+#header .search-form{
+	width: 520px;
+	height: 42px;
+	border: 3px solid #2292e9;
+}
+#header .search-form fieldset{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#header .search-form .input-text{
+	font-size: 14px;
+	color: #767676;
+	width: calc(100% - 42px);
+	padding: 0 10px;
+	height: 38px;
+	line-height: 38px;
+}
+#header .search-form .input-text::placeholder{
+	color: #2292e9;
+}
+#header .search-form .btn-keyboard{
+	width: 29px;
+	height: 16px;
+}
+#header .search-form .btn-submit{
+	width: 36px;
+	height: 36px;
+	background-position: -32px -97px;
+}
+
+#header .weather-area{
+	display: flex;
+	align-items: center;
+	width: 290px;
+	height: 85px;
+	margin-left: 10px;
+}
+
+#header .weather-area .icon-wrap{
+	width: 58px;
+	height: 47px;
+}
+#header .weather-area .info-wrap > a{
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+#header .weather-area .temp{
+	font-size: 25px;
+	font-weight: 700;
+	margin-right: 10px;
+}
+#header .weather-area .status{
+	font-size: 16px;
+	letter-spacing: -0.1em;
+}
+
+#header .weather-area .dust{
+	font-size: 13px;
+	letter-spacing: -1.5px;
+}
+#header .weather-area .dust .tag{
+	font-size: 14px;
+}
+#header .weather-area .dust .tag.good{
+	color: #0D6EFD;
+}
+#header .weather-area .dust .tag.average{
+	color: #26890C;
+}
+#header .brand-area a{
+	display: block;
+	width: 74px;
+	height: 47px;
+}
+#header .language-area{
+	display: flex;
+	height: 21px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#header .language-area select{
+	width: 80px;
+	border-color: #afcfea;
+	color: #1E6CB3;
+	font-size: 12px;
+	line-height: 21px;
+	appearance: none;
+	padding-left: 2px;
+	background: url(../images/select-arrow.png) no-repeat no-repeat 96% center;
+	background-size: 8px auto;
+}
+#header .language-area .btn-lang{
+	width: 30px;
+	font-size: 11px;
+	color: #fff;
+	background-color: #1E6CB3;
 }

@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>서울특별시 - 동행·매력 특별시 서울</title>
   <link rel="stylesheet" href="./assets/css/layout.css">
-	<link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico">
 </head>
+
 <body>
+  <div id="skipNav">
+    <a href="#main">본문내용바로가기</a>
+  </div>
   <!-- wrap -->
   <div id="wrap">
     <header id="header">
@@ -55,6 +61,37 @@
             </ul>
           </div>
         </div>
+        <div class="group-bottom">
+          <a href="#" class="link-main" aria-label="메인으로 이동">
+            <img src="./assets/images/seoul-slogan.png" alt="동행/매력 특별시 서울">
+          </a>
+          <div class="search-area">
+            <form action="" method="get" class="search-form">
+              <fieldset>
+                <!-- 폼영역 -->
+                <legend class="blind">검색</legend>
+                <input type="text" class="input-text" />
+                <button type="button" class="btn-keyboard" aria-pressed="false">
+                  <span class="blind">가상키보드</span>
+                </button>
+                <button type="submit" class="btn-submit">
+                  <span class="blind">검색하기</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+          <div class="weather-area"></div>
+          <div class="brand-area">
+            <a href="https://www.seoul.go.kr/newbrand/" target="_blank" aria-label="서울 신규 브랜드 소개 페이지로 이동(새창)">
+              <img src="./assets/images/brand-seoulmysoul.png" alt="SEOUL MY SOUL">
+            </a>
+          </div>
+          <div class="language-area">
+            <ul class="laguage-list">
+              <label for="cityLang" class="sr-only">언어 선택</label>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="group-story">
         <a href="https://news.seoul.go.kr/gov/archives/560912" target="_blank">
@@ -63,7 +100,116 @@
       </div>
     </header>
 
-
+    <main class="container">
+      <div class="inner content">
+        <section class="sc-visual">
+          <h2 class="blind">주요 소식 및 시민 참여 영역</h2>
+        </section>
+        <div class="right">
+          <section class="sc-news">
+            <h2 class="blind">서울 시장 뉴스</h2>
+            <a href="#">
+              <figure>
+                <img src="./assets/images/news_mayor.jpg" alt>
+                <figcaption>
+                  베이징 서울 홍보 프로모션 '서울 매력 전 세계에 확산'
+                </figcaption>
+              </figure>
+            </a>
+          </section>
+          <section class="sc-mayor">
+            <h2 class="blind">서울시장에게 바란다(온라인 시장실)</h2>
+          </section>
+          <section class="sc-kakao">
+            <a href="http://pf.kakao.com/_WlXsV" target="_blank">
+              <img src="./assets/images/kakao-text.png" alt="서울시 카카오톡 채널 추가 - 서울의 유용한 소식을 빠르게 받으세요!">
+            </a>
+          </section>
+        </div>
+      </div>
+      <div class="inner">
+        <section class="sc-service">
+          <h2 class="headline">주요서비스</h2>
+          <ul class="service-list">
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-service"></i>
+                공공서비스예약
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-answer"></i>
+                응답소(민원신고)
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-job"></i>
+                서울일자리
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-realestate"></i>
+                부동산정보
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-run"></i>
+                서울런
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-welfare"></i>
+                서울복지포털
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-house"></i>
+                서울주거포털
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-youth"></i>
+                청년몽땅정보통
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-hand"></i>
+                내 손안에 서울
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-imagin"></i>
+                상상대로 서울
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-long"></i>
+                평생학습포털
+              </a>
+            </li>
+            <li class="service-item">
+              <a href="#">
+                <i class="ic-council"></i>
+                시의회
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="link-nuri">
+            전체누리집
+          </a>
+        </section>
+      </div>
+    </main>
     <!-- footer -->
     <footer id="footer">
       <h2 class="blind">푸터 영역</h2>
@@ -103,14 +249,14 @@
           </div>
           <div class="addr-area">
             <address class="addr-box">
-							<p class="addr">
-								서울특별시청 04524 서울특별시 중구 세종대로 110 [찾아오시는 길]
-							</p>	
-							<p class="addr">
-								대표전화: 02-120 또는 02-731-2120 (365일 24시간)
-							</p>
-							<small class="copy">© Seoul Metropolitan Government all rights reserved</small>
-						</address>
+              <p class="addr">
+                서울특별시청 04524 서울특별시 중구 세종대로 110 [찾아오시는 길]
+              </p>
+              <p class="addr">
+                대표전화: 02-120 또는 02-731-2120 (365일 24시간)
+              </p>
+              <small class="copy">© Seoul Metropolitan Government all rights reserved</small>
+            </address>
           </div>
           <div class="mark-area">
             <a href="#" aria-label="서울시 웹접근성 품질마크 페이지로 이동">
@@ -126,4 +272,5 @@
     <span class="blind">페이지 상단으로 이동</span>
   </button>
 </body>
+
 </html>

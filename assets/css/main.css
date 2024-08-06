@@ -3,3 +3,50 @@
 	font-size: 24px;
 	font-weight: 700;
 }
+
+
+/* 배너 슬라이드 */
+.sc-banner{
+	padding: 50px 0;
+	border-top: 2px solid #000;
+  margin-top: 50px;
+}
+.sc-banner .group-control{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 10px;
+	position: relative;
+	gap: 10px;
+}
+.sc-banner .group-control .swiper-pagination{
+	width: auto;
+	position: relative;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.sc-banner .group-control .btn-wrap{
+	display: flex;
+}
+.sc-banner .btn-wrap .btn{
+	background-color: #fff;
+	width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+}
+.sc-banner .btn-wrap .btn+.btn{
+	border-left: 0;
+}
+.sc-banner .btn.prev{
+	background-position: -45px -43px;
+}
+.sc-banner .btn.next{
+	background-position: -86px -43px;
+}
+.sc-banner .btn.start{
+	background-position: -101px -43px;
+}
+.sc-banner .btn.stop{
+	background-position: -65px -43px;
+}

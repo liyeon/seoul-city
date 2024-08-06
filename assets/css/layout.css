@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+@import './reset.css';
+@import './common.css';
+
+#wrap{
+  min-width: 1280px;
+}
+.inner{
+  position: relative;
+	width: 1152px;
+	margin: 0 auto;
+	min-width: 1152px;
+}

@@ -29,7 +29,7 @@
   position: fixed;
   right: 50%;
   bottom: 98px;
-  margin-right: -600px;
+  margin-right: -650px;
 	width: 34px;
 	height: 34px;
   color: #fff;
@@ -44,8 +44,8 @@
 }
 
 #header .search-form .btn-submit,
-#header .group-header .logo,
+#header .group-header .logo a,
 .sc-banner .btn{
-  background-image: url(../images/icon/icon_sp.png);
+  background-image: url(../images/icons/icon_sp.png);
   background-repeat: no-repeat;
 }

@@ -11,15 +11,126 @@
 }
 .sc-visual{
 	width: 770px;
-	border: 1px solid #000;
+	position: relative;
 }
+
+.sc-visual .headline .btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+	width: 80px;
+	height: 175px;
+	background: #d2e1e9;
+	color: #333;
+	font-weight: 600;
+	font-size: 14px;
+	position: relative;
+}
+
+.sc-visual .headline .btn.on{
+	background-color: #0158a8;
+  color: #fff;
+}
+.sc-visual .headline .btn::before{
+	content: '';
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	background-image: url(../images/icons/icon_main.png);
+	background-position: 0 0;
+	border-radius: 50%;
+}
+.sc-visual .headline .btn.on::after{
+		content: '';
+    position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 32px;
+    border-color: transparent transparent transparent #0158a8;
+		z-index: 2;
+}
+.sc-visual .slide-area{
+	position: absolute;
+	top: 0;
+	left: 80px;
+	width: 690px;
+	height: 350px;
+}
+
+.sc-visual .slide-area .swiper{
+	display: none;
+}
+.sc-visual .slide-area .swiper.active{
+	display: block;
+}
+.sc-visual .swiper-slide figure{
+	overflow: hidden;
+	display: flex;
+}
+.sc-visual .swiper-slide figure img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.sc-visual .swiper-slide figcaption{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	bottom: 0px;
+	width: 100%;
+	height: 40px;
+	padding-left: 10px;
+	padding-right: 122px;
+	background-color: rgba(0, 0, 0, .7);
+	color: #fff;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	box-sizing: border-box;
+}
+.sc-visual .swiper .group-control{
+	align-items: center;
+	position: absolute;
+	bottom: 11px;
+	right: 0;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+.sc-visual .swiper .group-control .swiper-pagination{
+	width: auto;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.sc-visual .swiper .group-control .btn-wrap{
+	display: flex;
+	gap: 3px;
+}
+.sc-visual .swiper .group-control .btn-wrap .btn{
+	display: block;
+	background: #fdd;
+	width: 10px;
+	height: 10px;
+	font-size: 13px;
+}
+.sc-visual .swiper .group-control .btn.prev{}
+.sc-visual .swiper .group-control .btn.start{}
+.sc-visual .swiper .group-control .btn.stop{}
+.sc-visual .swiper .group-control .btn.next{}
+.sc-visual .swiper .group-control .btn.all{}
 .sc-mayor{
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	width: 360px;
-}
-.sc-mayor .group-news{
 }
 .sc-mayor .group-news figure{
 	height: 190px;
@@ -195,6 +306,9 @@ position: absolute;
 .sc-related .related-item.none >a::after{
 	content: none;
 }
+.sc-related .related-item.on{
+	background:#e2e2e2;
+}
 .sc-related .related-item.on > a::after{
 	margin-top: -3px;
 	transform: rotate(45deg);
@@ -205,20 +319,23 @@ position: absolute;
 .sc-related .related-item+.related-item{
 	border-left: 1px solid #d0d0d0;
 }
-.sc-related .sub-list{
-	display: grid;
+
+.sc-related .related-item .sub-wrap{
 	display: none;
-	grid-template-columns: repeat(4,1fr);
-	gap: 10px;
 	position: absolute;
 	bottom: 50px;
 	left: 0;
 	width: 100%;
+	z-index: 2;
+}
+.sc-related .related-item .sub-list{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 10px;
 	padding: 20px;
 	background: #fff;
 	border: 1px solid #d0d0d0;
-	box-sizing: border-box;
-	z-index: 2	;
+	
 }
 .sc-related .sub-item{
 	color: #555;

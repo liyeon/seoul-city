@@ -45,8 +45,11 @@
 	height: 50px;
 	gap: 65px;
 }
+#header .group-header .logo{
+	display: flex;;
+	margin-top: -10px;
+}
 #header .group-header .logo a{
-	display: block;
 	width: 105px;
 	height: 27px;
 	background-position: -5px -165px;
@@ -83,14 +86,17 @@
 	align-items: center;
 	justify-content: space-between;
 	height: 120px;
+	gap: 20px;
 	position: relative;
 }
 #header .group-bottom .link-main{	
 	width: 133px;
 	height: 51px;
-	margin-right: 110px;
 }
 
+#header .search-area{
+	padding-left: 75px;
+}
 #header .search-form{
 	width: 520px;
 	height: 42px;
@@ -100,6 +106,7 @@
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	padding-right: 3px;
 }
 #header .search-form .input-text{
 	font-size: 14px;
@@ -115,19 +122,18 @@
 #header .search-form .btn-keyboard{
 	width: 29px;
 	height: 16px;
+	margin-top: -2px;
 }
 #header .search-form .btn-submit{
 	width: 36px;
 	height: 36px;
-	background-position: -32px -97px;
+	background-position: -32px -99px;
 }
 
 #header .weather-area{
 	display: flex;
 	align-items: center;
-	width: 290px;
 	height: 85px;
-	margin-left: 10px;
 }
 
 #header .weather-area .icon-wrap{

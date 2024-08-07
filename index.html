@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>서울특별시 - 동행·매력 특별시 서울</title>
   <!-- swiper -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/layout.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <!-- favicon -->
   <link rel="shortcut icon" href="./assets/images/favicon.ico">
 
-  <!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
   <!-- swiper -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
   <!-- script -->
   <script src="./assets/js/main.js" defer></script>
 </head>
@@ -83,7 +83,7 @@
                 <legend class="blind">검색</legend>
                 <input type="text" class="input-text" placeholder="검색어를 입력해주세요." />
                 <button type="button" class="btn-keyboard" aria-pressed="false">
-                  <img src="./assets/images/icon/keyboard.png" alt="">
+                  <img src="./assets/images/icons/keyboard.png" alt="">
                 </button>
                 <button type="submit" class="btn-submit">
                   <span class="blind">검색하기</span>
@@ -141,46 +141,180 @@
       <div class="inner content">
         <section class="sc-visual">
           <h2 class="blind">주요 소식 및 시민 참여 영역</h2>
-        </section>
-        <section class="sc-mayor">
           <div class="group-news">
-            <h2 class="blind">서울 시장 뉴스</h2>
-            <a href="#">
-              <figure>
-                <img src="./assets/images/news_mayor.jpg" alt>
-                <figcaption>
-                  베이징 서울 홍보 프로모션 '서울 매력 전 세계에 확산'
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="group-mayor">
-            <h2 class="blind">서울시장에게 바란다(온라인 시장실)</h2>
-            <a href="https://mayor.seoul.go.kr/index.do" class="link-mayor" target="_blank">
-              <img src="./assets/images/mayor/img-mayor-intro.png" alt="서울 특별시장 오세훈입니다.">
-            </a>
-            <a href="#" class="link-want">
-              <img src="./assets/images/mayor/btn-mayorlink0.png" alt="시장에게 바란다.">
-            </a>
-            <div class="link-wrap">
-              <a href="#">
-                <img src="./assets/images/mayor/btn-mayorlink1.png" alt="공약(메니페스토)">
-              </a>
-              <a href="#">
-                <img src="./assets/images/mayor/btn-mayorlink2.png" alt="정책제안">
-              </a>
-              <a href="#">
-                <img src="./assets/images/mayor/btn-mayorlink3.png" alt="투표">
-              </a>
-              <a href="#">
-                <img src="./assets/images/mayor/btn-mayorlink4.png" alt="설문조사">
-              </a>
+            <h3 class="headline">
+              <button class="btn btn-news on">
+                주요뉴스
+              </button>
+            </h3>
+            <div class="slide-area">
+              <div class="swiper active">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/news/1.jpg" alt>
+                        <figcaption>도심 속 무더위 피하고 싶다면! 갓성비 넘치는 '한강페스티벌'</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/news/2.jpg" alt>
+                        <figcaption>올여름 광화문광장에 가야 할 이유! 챗봇미션부터 워터파크까지</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/news/3.jpg" alt>
+                        <figcaption>김환기 작품 DDP 수놓는다! 초대형 미디어아트로 부활</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/news/4.jpg" alt>
+                        <figcaption>AI야, 여행지 골라줄래?" 해치와 함께 상상바캉스 떠나요!</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/news/5.jpg" alt>
+                        <figcaption>올여름은 '방콕 대신 서울콕'…해치가 추천하는 휴가지는?</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/news/6.jpg" alt>
+                        <figcaption>위급할 땐 누르세요!♡ 서울시 안심벨 헬프미 신청인원 초과로 조기 마감</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+                <div class="group-control">
+                  <div class="swiper-pagination"></div>
+                  <div class="btn-wrap">
+                    <button type="button" class="btn prev" aria-label="이전 슬라이드"></button>
+                    <button type="button" class="btn start" aria-label="슬라이드 시작"></button>
+                    <button type="button" class="btn stop" aria-label="슬라이드 정지"></button>
+                    <button type="button" class="btn next" aria-label="다음 슬라이드"></button>
+                  </div>
+                  <button class="btn all">전체보기</button>
+                </div>
+              </div>
             </div>
           </div>
-          <a href="http://pf.kakao.com/_WlXsV" target="_blank" class="link-kakao">
-            <img src="./assets/images/kakao-text.png" alt="서울시 카카오톡 채널 추가 - 서울의 유용한 소식을 빠르게 받으세요!">
-          </a>
-        </section>
+          <div class="group-citizen">
+            <h3 class="headline">
+              <button class="btn btn-citizen">
+                시민참여
+              </button>
+            </h3>
+            <div class="slide-area">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/citizen/1.jpg" alt>
+                        <figcaption>무더운 여름, 동네 도서관에서 시원하게 독서해요! [도서관은 쿨하다] 캠페인 개최</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/citizen/3.png" alt>
+                        <figcaption>공공기관 참여 모아타운 공공관리사업 대상지 공모</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/citizen/4.jpg" alt>
+                        <figcaption>2024년 서울 스마트라이프 AIoT 해커톤</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/citizen/5.png" alt>
+                        <figcaption>2024 제73회 서울특별시 문화상 수상후보자 추천(재공고)</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <figure>
+                        <img src="./assets/images/slide/citizen/7.jpg" alt>
+                        <figcaption>서울버스커페스티벌 8월23일~25일 노들섬 개최</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+                <div class="group-control">
+                  <div class="swiper-pagination"></div>
+                  <div class="btn-wrap">
+                    <button type="button" class="btn prev" aria-label="이전 슬라이드"></button>
+                    <button type="button" class="btn start" aria-label="슬라이드 시작"></button>
+                    <button type="button" class="btn stop" aria-label="슬라이드 정지"></button>
+                    <button type="button" class="btn next" aria-label="다음 슬라이드"></button>
+                  </div>
+                  <button class="btn all">전체보기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          <section class="sc-mayor">
+            <div class="group-news">
+              <h2 class="blind">서울 시장 뉴스</h2>
+              <a href="#">
+                <figure>
+                  <img src="./assets/images/news_mayor.jpg" alt>
+                  <figcaption>
+                    베이징 서울 홍보 프로모션 '서울 매력 전 세계에 확산'
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="group-mayor">
+              <h2 class="blind">서울시장에게 바란다(온라인 시장실)</h2>
+              <a href="https://mayor.seoul.go.kr/index.do" class="link-mayor" target="_blank">
+                <img src="./assets/images/mayor/img-mayor-intro.png" alt="서울 특별시장 오세훈입니다.">
+              </a>
+              <a href="#" class="link-want">
+                <img src="./assets/images/mayor/btn-mayorlink0.png" alt="시장에게 바란다.">
+              </a>
+              <div class="link-wrap">
+                <a href="#">
+                  <img src="./assets/images/mayor/btn-mayorlink1.png" alt="공약(메니페스토)">
+                </a>
+                <a href="#">
+                  <img src="./assets/images/mayor/btn-mayorlink2.png" alt="정책제안">
+                </a>
+                <a href="#">
+                  <img src="./assets/images/mayor/btn-mayorlink3.png" alt="투표">
+                </a>
+                <a href="#">
+                  <img src="./assets/images/mayor/btn-mayorlink4.png" alt="설문조사">
+                </a>
+              </div>
+            </div>
+            <a href="http://pf.kakao.com/_WlXsV" target="_blank" class="link-kakao">
+              <img src="./assets/images/kakao-text.png" alt="서울시 카카오톡 채널 추가 - 서울의 유용한 소식을 빠르게 받으세요!">
+            </a>
+          </section>
       </div>
       <div class="inner">
         <section class="sc-service">
@@ -481,7 +615,7 @@
           </ul>
           <a href="#" class="link-all">전체보기</a>
         </section>
-        
+
         <article class="at-media">
           <h2 class="blind">미디어</h2>
           <section class="sc-video">
@@ -630,81 +764,88 @@
           <ul class="related-list">
             <li class="related-item">
               <a href="#">직속기관·사업소</a>
-              <ul class="sub-list">
-                <script>
-                  let desc = ["서울시립대학교","보건환경연구원","인재개발원","농업기술센터","서울종합방재센터","119특수구조단","소방서","소방학교","서울아리수본부","미래한강본부","물재생센터","서북병원",
-                  "어린이병원","은평병원","서울역사박물관","한성백제박물관","서울공예박물관","시립미술관","체육시설관리사업소","서울도서관","서울역사편찬원","품질시험소","서울대공원","동부공원녹지사업소",
-                  "중부공원녹지사업소","서부공원녹지사업소","북부공원녹지사업소","서울시립과학관","서울식물원","서울기록원","아동복지센터","공무원수련원","시민안전체험관"
-                  ];
-                  for (let i = 0; i < desc.length; i++) {
-                    document.write(`
-                      <li class='sub-item'>
-                        <a href='#'>
-                            ${desc[i]}
-                        </a>
-                      </li>
-                  `);
-                  }
-                </script>
-              </ul>
+              <div class="sub-wrap">
+                <ul class="sub-list">
+                  <script>
+                    let desc = ["서울시립대학교", "보건환경연구원", "인재개발원", "농업기술센터", "서울종합방재센터", "119특수구조단", "소방서", "소방학교", "서울아리수본부", "미래한강본부", "물재생센터", "서북병원",
+                      "어린이병원", "은평병원", "서울역사박물관", "한성백제박물관", "서울공예박물관", "시립미술관", "체육시설관리사업소", "서울도서관", "서울역사편찬원", "품질시험소", "서울대공원", "동부공원녹지사업소",
+                      "중부공원녹지사업소", "서부공원녹지사업소", "북부공원녹지사업소", "서울시립과학관", "서울식물원", "서울기록원", "아동복지센터", "공무원수련원", "시민안전체험관"
+                    ];
+                    for (let i = 0; i < desc.length; i++) {
+                      document.write(`
+                        <li class='sub-item'>
+                          <a href='#'>
+                              ${desc[i]}
+                          </a>
+                        </li>
+                    `);
+                    }
+                  </script>
+                </ul>
+              </div>
             </li>
             <li class="related-item">
               <a href="#">공사·출연기관</a>
-              <ul class="sub-list">
-                <script>
-                  let desc2 = ["서울교통공사","서울시설공단","서울특별시 농수산식품공사","서울주택도시공사","서울에너지공사","서울물재생시설공단","서울의료원","서울연구원","서울경제진흥원","서울신용보증재단","세종문화회관","서울특별시 여성가족재단","서울시복지재단","서울문화재단","서울시립교향악단","서울디자인재단","서울장학재단","서울특별시 평생교육진흥원","서울관광재단","서울특별시 50플러스재단","서울디지털재단","서울특별시 120다산콜재단","서울시 사회서비스원","서울시미디어재단TBS"
-                  ];
-                  for (let i = 0; i < desc2.length; i++) {
-                    document.write(`
-                      <li class='sub-item'>
-                        <a href='#'>
-                            ${desc2[i]}
-                        </a>
-                      </li>
-                  `);
-                  }
-                </script>
-              </ul>
+              <div class="sub-wrap">
+                <ul class="sub-list">
+                  <script>
+                    let desc2 = ["서울교통공사", "서울시설공단", "서울특별시 농수산식품공사", "서울주택도시공사", "서울에너지공사", "서울물재생시설공단", "서울의료원", "서울연구원", "서울경제진흥원", "서울신용보증재단", "세종문화회관", "서울특별시 여성가족재단", "서울시복지재단", "서울문화재단", "서울시립교향악단", "서울디자인재단", "서울장학재단", "서울특별시 평생교육진흥원", "서울관광재단", "서울특별시 50플러스재단", "서울디지털재단", "서울특별시 120다산콜재단", "서울시 사회서비스원", "서울시미디어재단TBS"
+                    ];
+                    for (let i = 0; i < desc2.length; i++) {
+                      document.write(`
+                        <li class='sub-item'>
+                          <a href='#'>
+                              ${desc2[i]}
+                          </a>
+                        </li>
+                    `);
+                    }
+                  </script>
+                </ul>
+              </div>
             </li>
             <li class="related-item">
               <a href="#">자치구</a>
-              <ul class="sub-list">
-                <script>
-                  let desc3 = ["강남구","강동구","강북구","강서구","관악구","광진구","구로구","금천구","노원구","도봉구","동대문구","동작구","마포구","서대문구","서초구","성동구","성북구","송파구","양천구","영등포구","용산구","은평구","종로구","중구","중랑구"
-                  ];
-                  for (let i = 0; i < desc3.length; i++) {
-                    document.write(`
-                      <li class='sub-item'>
-                        <a href='#'>
-                            ${desc3[i]}
-                        </a>
-                      </li>
-                  `);
-                  }
-                </script>
-              </ul>
+              <div class="sub-wrap">
+                <ul class="sub-list">
+                  <script>
+                    let desc3 = ["강남구", "강동구", "강북구", "강서구", "관악구", "광진구", "구로구", "금천구", "노원구", "도봉구", "동대문구", "동작구", "마포구", "서대문구", "서초구", "성동구", "성북구", "송파구", "양천구", "영등포구", "용산구", "은평구", "종로구", "중구", "중랑구"
+                    ];
+                    for (let i = 0; i < desc3.length; i++) {
+                      document.write(`
+                        <li class='sub-item'>
+                          <a href='#'>
+                              ${desc3[i]}
+                          </a>
+                        </li>
+                    `);
+                    }
+                  </script>
+                </ul>
+              </div>
             </li>
             <li class="related-item none">
               <a href="#">중앙행정기관</a>
             </li>
             <li class="related-item">
               <a href="#">지방자치단체·유관기관</a>
-              <ul class="sub-list">
-                <script>
-                  let desc4 = ["서울특별시","부산광역시","대구광역시","인천광역시","광주광역시","대전광역시","울산광역시","세종특별자치시","경기도","강원도","충청북도","충청남도","전라북도","전라남도","경상북도","경상남도","제주특별자치도"
-                  ];
-      
-                  for (let i = 0; i < desc4.length; i++) {
-                    document.write(`
-                      <li class='sub-item'>
-                        <a href='#'>
-                            ${desc4[i]}
-                        </a>
-                      </li>
-                  `);
-                  }
-                </script>
-              </ul>
+              <div class="sub-wrap">
+                <ul class="sub-list">
+                  <script>
+                    let desc4 = ["서울특별시", "부산광역시", "대구광역시", "인천광역시", "광주광역시", "대전광역시", "울산광역시", "세종특별자치시", "경기도", "강원도", "충청북도", "충청남도", "전라북도", "전라남도", "경상북도", "경상남도", "제주특별자치도"
+                    ];
+                    for (let i = 0; i < desc4.length; i++) {
+                      document.write(`
+                        <li class='sub-item'>
+                          <a href='#'>
+                              ${desc4[i]}
+                          </a>
+                        </li>
+                    `);
+                    }
+                  </script>
+                </ul>
+              </div>
             </li>
           </ul>
         </section>

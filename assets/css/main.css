@@ -97,7 +97,7 @@
 .sc-visual .swiper .group-control{
 	align-items: center;
 	position: absolute;
-	bottom: 11px;
+	bottom: 0;
 	right: 0;
 	z-index: 2;
 	display: flex;
@@ -112,20 +112,57 @@
 }
 .sc-visual .swiper .group-control .btn-wrap{
 	display: flex;
+	align-items: center;
 	gap: 3px;
+	margin: 0 10px;
+}
+.sc-visual .swiper .group-control .btn-wrap::before{
+	content: '';
+	width: 1px;
+	height: 24px;
+	margin: 0 5px;
+	background: rgba(255, 255, 255, .5);
 }
 .sc-visual .swiper .group-control .btn-wrap .btn{
+	width: 18px;
+	height: 18px;
+}
+.sc-visual .swiper .group-control .btn-wrap .btn.prev{
+	background-position: -241px -285px;
+}
+.sc-visual .swiper .group-control .start,
+.sc-visual .swiper .group-control .stop{
+	display: none;
+}
+.sc-visual .swiper .group-control .start.on,
+.sc-visual .swiper .group-control .stop.on{
 	display: block;
-	background: #fdd;
-	width: 10px;
-	height: 10px;
+}
+.sc-visual .swiper .group-control .btn-wrap .btn.start{
+	background-position: -269px -285px;
+}
+.sc-visual .swiper .group-control .btn-wrap .btn.stop{
+	background-position: -285px -285px;
+}
+.sc-visual .swiper .group-control .btn-wrap .btn.next{
+	background-position: -256px -285px;
+}
+.sc-visual .swiper .group-control .btn.all{
+	display: flex;
+	align-items: center;
+	background: #000;
+	color: #fff;
+	gap: 5px;
+	padding: 11px 10px 10px;
 	font-size: 13px;
 }
-.sc-visual .swiper .group-control .btn.prev{}
-.sc-visual .swiper .group-control .btn.start{}
-.sc-visual .swiper .group-control .btn.stop{}
-.sc-visual .swiper .group-control .btn.next{}
-.sc-visual .swiper .group-control .btn.all{}
+.sc-visual .swiper .group-control .btn.all::before{
+	content: '';
+	width: 12px;
+	height: 12px;
+	background-image: url(../images/icons/icon_all.png);
+	background-position: 0 0;
+}
 .sc-mayor{
 	display: flex;
 	flex-direction: column;
@@ -324,8 +361,8 @@ position: absolute;
 	display: none;
 	position: absolute;
 	bottom: 50px;
-	left: 0;
-	width: 100%;
+	left: -1px;
+	width: calc(100% + 2px);
 	z-index: 2;
 }
 .sc-related .related-item .sub-list{

@@ -54,6 +54,23 @@ $('.btn-citizen').on('click', function() {
   $(this).addClass('on');
 });
 
+// 메인 슬라이드 재생/정지
+function toggleAutoplay(group, slide) {
+  $(`.${group} .start`).on('click', function() {
+      slide.autoplay.start();
+      $(`.${group} .start`).removeClass('on');
+      $(`.${group} .stop`).addClass('on');
+  });
+
+  $(`.${group} .stop`).on('click', function() {
+      slide.autoplay.stop();
+      $(`.${group} .stop`).removeClass('on');
+      $(`.${group} .start`).addClass('on');
+  });
+}
+
+toggleAutoplay('group-news', newsSlide);
+toggleAutoplay('group-citizen', citizenSlide);
 
 //배너 슬라이드
 const bannerSlide = new Swiper('.sc-banner .swiper',{

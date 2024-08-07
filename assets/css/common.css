@@ -43,6 +43,7 @@
 	background: url(../images/btn_top.png) no-repeat center/cover;
 }
 
+.sc-visual .swiper .group-control .btn-wrap .btn,
 #header .search-form .btn-submit,
 #header .group-header .logo a,
 .sc-banner .btn{

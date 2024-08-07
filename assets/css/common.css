@@ -50,7 +50,9 @@
   opacity: 1;
   visibility: visible;
 }
-
+.at-media .sc-sns .link-all::after,
+.sc-news .link-all::after,
+.at-board .link-more,
 #footer .group-copy .info-area,
 .sc-visual .swiper .group-control .btn-wrap .btn,
 #header .search-form .btn-submit,

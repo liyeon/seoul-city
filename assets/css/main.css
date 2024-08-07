@@ -242,6 +242,89 @@ position: absolute;
 	height: 50px;
 }
 
+/* 주요 서비스 */
+.sc-service{
+	margin-top: 50px;
+	position: relative;
+}
+.sc-service .link-nuri{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 112px;
+	height: 29px;
+	border: 1px solid #ddd;
+	font-size: 15px;
+	position: absolute;
+	top: 0;
+	left: 140px;
+	padding-left: 13px;
+	background: url(../images/icons/icon_next.png) no-repeat right 13px top 50%; /*오른쪽에서 13px , top에서 50%*/
+}
+
+.sc-service .service-list{
+	margin-top: 15px;
+	border-top: 1px solid #dbdbdb;
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.sc-service .service-item{
+	display: flex;
+}
+.sc-service .service-item a{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 15px;
+	gap: 10px;
+}
+.sc-service .service-item .icon{
+	width: 60px;
+	height: 60px;
+	background-image: url(../images/icons/icon_service.png);
+	background-repeat: no-repeat;
+}
+
+.sc-service .service-item .ic-service{
+	background-position: -360px 0;
+}
+.sc-service .service-item .ic-answer{
+	background-position: 0 0;
+}
+.sc-service .service-item .ic-job{
+	background-position: -120px 0;
+}
+.sc-service .service-item .ic-realestate{
+	background-position: -300px 0;
+}
+.sc-service .service-item .ic-run{
+	background-position: -180px 0;
+}
+.sc-service .service-item .ic-welfare{
+	background-position: -960px 0;
+}
+.sc-service .service-item .ic-house{
+	background-position: -780px 0;
+}
+.sc-service .service-item .ic-youth{
+	background-position: -1140px 0;
+}
+.sc-service .service-item .ic-hand{
+	background-position: -1020px 0;
+}
+.sc-service .service-item .ic-imagin{
+	background-position: -60px 0;
+}
+.sc-service .service-item .ic-long{
+	background-position: -1200px 0;
+}
+.sc-service .service-item .ic-council{
+	background-position: -600px 0;
+}
+
+
+/* 이미지 배너 */
 .ad-banner{
 	margin-top: 35px;
 	background: #eff4f8;

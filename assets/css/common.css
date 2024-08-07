@@ -50,6 +50,8 @@
   opacity: 1;
   visibility: visible;
 }
+
+#footer .group-copy .info-area,
 .sc-visual .swiper .group-control .btn-wrap .btn,
 #header .search-form .btn-submit,
 #header .group-header .logo a,

@@ -197,3 +197,66 @@
 	color: #fff;
 	background-color: #1E6CB3;
 }
+
+/* footer */
+#footer{
+	margin-top: 20px;
+}
+#footer .group-link{
+	height: 50px;
+	display: flex;
+	align-items: flex-start;
+}
+#footer .ft-list{
+	display: flex;
+	gap: 10px;
+}
+#footer .ft-item a{
+	font-size: 12px;
+  color: #636363;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+#footer .ft-item+.ft-item a::before{
+	content: '';
+	width: 1px;
+	height: 14px;
+	background: #dcdcdc;
+}
+#footer .group-link a >em{
+	color: #000;
+	font-weight: 700;
+}
+#footer .ft-kakao a{
+	display: block;
+	width: 114px;
+	height: 24px;
+	background: url(../images/icons/ico-sns-pc.png) no-repeat 0 -30px;
+}
+#footer .group-copy{
+	padding: 22px 0;
+	border-top: 1px solid #ccc;
+	display: flex;
+}
+#footer .group-copy .info-area{
+	margin-right: 40px;
+	width: 108px;
+	height: 45px;
+	background-position:-180px 0;
+}
+#footer .group-copy .addr-area{
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+#footer .group-copy .addr-box{
+	color: #636363;
+  font-size: 12px;
+}
+#footer .group-copy .addr{
+	padding-bottom: 2px;
+}
+#footer .group-copy .copy{
+	font-size: 11px;
+}

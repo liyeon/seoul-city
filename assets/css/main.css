@@ -323,7 +323,6 @@ position: absolute;
 	background-position: -600px 0;
 }
 
-
 /* 이미지 배너 */
 .ad-banner{
 	margin-top: 35px;
@@ -349,10 +348,41 @@ position: absolute;
 	height: 60px;
 	background: #dbdbdb;
 }
+
+/* 게시판 */
+.at-board{
+	padding: 50px 0;
+	border-bottom: 2px solid #222;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 36px;
+}
+.at-board > section{
+	flex: 1;
+}
+
+/* 분야별 정보 */
+.sc-info{}
+
+/* 새소식 */
+.sc-news{}
+.sc-news .news-list{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 15px;
+}
+
+/* 미디어 영역 */
+.at-media{
+	display: flex;
+	align-items: flex-start;
+	gap: 22px;
+}
 /* 배너 슬라이드 */
 .sc-banner{
 	padding: 50px 0;
-	border-top: 2px solid #000;
+	border-top: 2px solid #222;
   margin-top: 50px;
 }
 .sc-banner .group-control{

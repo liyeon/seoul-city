@@ -28,13 +28,16 @@
   display: flex;
   position: fixed;
   right: 50%;
-  bottom: 98px;
+  bottom: -100px;
   margin-right: -650px;
 	width: 34px;
 	height: 34px;
   color: #fff;
   border-radius: 50%;
   font-weight: bold;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
 }
 .btn-top::before{
 	content: '';
@@ -42,7 +45,11 @@
   height: 100%;
 	background: url(../images/btn_top.png) no-repeat center/cover;
 }
-
+.btn-top.on{
+  bottom: 98px;
+  opacity: 1;
+  visibility: visible;
+}
 .sc-visual .swiper .group-control .btn-wrap .btn,
 #header .search-form .btn-submit,
 #header .group-header .logo a,

@@ -55,7 +55,7 @@ $('.btn-citizen').on('click', function() {
 });
 
 // 메인 슬라이드 재생/정지
-function toggleAutoplay(group, slide) {
+function mainPlay(group, slide) {
   $(`.${group} .start`).on('click', function() {
       slide.autoplay.start();
       $(`.${group} .start`).removeClass('on');
@@ -69,8 +69,8 @@ function toggleAutoplay(group, slide) {
   });
 }
 
-toggleAutoplay('group-news', newsSlide);
-toggleAutoplay('group-citizen', citizenSlide);
+mainPlay('group-news', newsSlide);
+mainPlay('group-citizen', citizenSlide);
 
 //배너 슬라이드
 const bannerSlide = new Swiper('.sc-banner .swiper',{
@@ -91,10 +91,23 @@ const bannerSlide = new Swiper('.sc-banner .swiper',{
   }
 })
 //배너 슬라이드 재생,정지
+$('.sc-banner .start').hide(); // 시작 시 재생 버튼 숨기기
+
+$('.sc-banner .start').on('click',function() {
+  bannerSlide.autoplay.start();
+  $('.start').hide();
+  $('.stop').show();
+});
+
+$('.sc-banner .stop').on('click',function() {
+  bannerSlide.autoplay.stop();
+  $('.stop').hide();
+  $('.start').show();
+});
 
 
 //관련 사이트
-$('.related-item').click(function (e) { 
+$('.related-item').on('click',function (e) { 
   e.preventDefault();
   if ($(this).hasClass('on')) {
     $(this).removeClass('on').find('.sub-wrap').stop().slideUp();
@@ -102,4 +115,20 @@ $('.related-item').click(function (e) {
     $('.related-item').removeClass('on').find('.sub-wrap').stop().slideUp();
     $(this).addClass('on').find('.sub-wrap').stop().slideDown();
   }
+});
+
+// 상단 이동 버튼
+  // 스크롤 이벤트 핸들러
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) { // 스크롤이 100px 이상일 때
+    $('.btn-top').addClass('on'); 
+  } else {
+    $('.btn-top').removeClass('on'); 
+  }
+});
+
+// 버튼 클릭 시 상단으로 스크롤
+$('.btn-top').on('click',function() {
+    $('html, body').animate({ scrollTop: 0 }, 400);
+    return false; // 클릭 시 기본 동작 방지
 });

@@ -55,6 +55,9 @@
     border-color: transparent transparent transparent #0158a8;
 		z-index: 2;
 }
+.sc-visual .headline .btn.btn-citizen::before{
+	background-position: -50px 0px;
+}
 .sc-visual .slide-area{
 	position: absolute;
 	top: 0;

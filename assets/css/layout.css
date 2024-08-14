@@ -123,6 +123,7 @@
 	width: 29px;
 	height: 16px;
 	margin-top: -2px;
+	background: url(../images/icons/keyboard.png) no-repeat center / 100%;
 }
 #header .search-form .btn-submit{
 	width: 36px;
@@ -145,27 +146,27 @@
 	flex-direction: column;
 	gap: 7px;
 }
-#header .weather-area .temp{
+#header .weather-area .temp-box .temp{
 	font-size: 25px;
 	font-weight: 700;
 	margin-right: 10px;
 }
-#header .weather-area .status{
+#header .weather-area .temp-box .status{
 	font-size: 16px;
 	letter-spacing: -0.1em;
 }
 
-#header .weather-area .dust{
+#header .weather-area .dust-box{
 	font-size: 13px;
 	letter-spacing: -1.5px;
 }
-#header .weather-area .dust .tag{
+#header .weather-area .dust-box .status{
 	font-size: 14px;
 }
-#header .weather-area .dust .tag.good{
+#header .weather-area .dust-box .status.good{
 	color: #0D6EFD;
 }
-#header .weather-area .dust .tag.average{
+#header .weather-area .dust-box .status.average{
 	color: #26890C;
 }
 #header .brand-area a{

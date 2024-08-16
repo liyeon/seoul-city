@@ -1,4 +1,6 @@
-
+body.hidden{
+  overflow: hidden;
+}
 #skipNav a{
   position: absolute;
   width: 100%;

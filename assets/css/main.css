@@ -214,6 +214,70 @@
 	background-position: 0 0;
 }
 
+/* 비주얼 배너 전체보기 */
+.sc-allBanner {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, .75);
+	overflow-y: auto;
+	z-index: 7;
+	transition: .3s;
+}
+
+.sc-allBanner .headline{
+	background: url(../images/icons/bannerAll-title-bg.png) no-repeat 50% 0;
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+	padding: 70px 0 0;
+	font-family: sans-serif;
+}
+.sc-allBanner .group-banner+.group-banner{
+	margin-top: 20px;
+}
+.sc-allBanner .banner-list{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 10px;
+}
+
+.sc-allBanner .btn-close{
+	position: absolute;
+	top: 55px;
+	left: 50%;
+	margin-left: 526px;
+	background: #3d72fc;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.sc-allBanner .btn-close::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	width: 24px;
+	height: 4px;
+	background: #fff;
+	border-radius: 3px;
+}
+.sc-allBanner .btn-close::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	width: 24px;
+	height: 4px;
+	background: #fff;
+	border-radius: 3px;
+}
+/* 서울 시장 */
 .sc-mayor {
 	display: flex;
 	flex-direction: column;

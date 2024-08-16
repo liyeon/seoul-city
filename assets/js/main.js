@@ -3,6 +3,16 @@ $('.btn-lang').click(function(){
   window.open(url);
 })
 
+// 메인 슬라이드 배너 전체보기
+$('.sc-visual .all').click(function (e) {
+  $('.sc-allBanner').show();
+  $('body').addClass('hidden');
+});
+$('.sc-allBanner .btn-close').click(function (e) {
+  $('.sc-allBanner').hide();
+  $('body').removeClass('hidden');
+});
+
 // 메인 슬라이드 주요뉴스
 const newsSlide = new Swiper('.sc-visual .news .swiper',{
   loop:true,

@@ -226,6 +226,7 @@
 	overflow-y: auto;
 	z-index: 7;
 	transition: .3s;
+	padding: 20px 0;
 }
 
 .sc-allBanner .headline{
